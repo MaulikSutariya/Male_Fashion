@@ -70,7 +70,7 @@
           <div class="logo"><img :src="require('@/assets/logo.png')" /></div>
           <div>
             <router-link class="nav_link" to="/">Home</router-link>
-            <router-link class="nav_link" to="/about">About</router-link>
+            <router-link class="nav_link" to="/about">Shop</router-link>
             <router-link class="nav_link" to="/about">Blogs</router-link>
             <router-link class="nav_link" to="/about">Testemonial</router-link>
             <router-link class="nav_link" to="/about">Contact Us</router-link>
