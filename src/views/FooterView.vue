@@ -42,7 +42,7 @@
               </div>
               <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
                 <div class="footer__widget">
-                  <h6 class="text-subtitle-1">NewLetter</h6>
+                  <h6 class="text-subtitle-1 mb-3 ">News Letter</h6>
                   <div class="footer__newslatter">
                     <p class="text-subtitle-2">
                       Be the first to know about new arrivals,<br />
@@ -75,7 +75,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  
+};
 </script>
 
 <style></style>

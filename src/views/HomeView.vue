@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="home">
+    <div class="home"  :style="{backgroundImage: 'url('+require('@/assets/banner_bg.jpg')}">
       <div class="v-container">
         <div class="banner_section">
           <h6>SUMMER COLLECTION</h6>
@@ -173,7 +173,9 @@
                 >₹ {{ item.price }}</v-card-title
               >
              <div class="Now_button">
-            <div class="shop_Now_button w-100 ">
+            <div class="shop_Now_button w-100 
+            
+            +">
               <h4>Add To Cart</h4>
             </div>
           </div>
@@ -245,6 +247,7 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -331,7 +334,7 @@ export default {
 
 <style>
 .home {
-  background-image: url("@/assets/banner_bg.jpg");
+  /* background-image: url("@/assets/banner_bg.jpg"); */
   height: 600px;
 }
 .banner_section {

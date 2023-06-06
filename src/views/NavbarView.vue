@@ -70,8 +70,8 @@
           <div class="logo"><img :src="require('@/assets/logo.png')" /></div>
           <div>
             <router-link class="nav_link" to="/">Home</router-link>
-            <router-link class="nav_link" to="/about">Shop</router-link>
-            <router-link class="nav_link" to="/about">Blogs</router-link>
+            <router-link class="nav_link" to="/shop">Shop</router-link>
+            <router-link class="nav_link" to="/blog">Blogs</router-link>
             <router-link class="nav_link" to="/about">Testemonial</router-link>
             <router-link class="nav_link" to="/about">Contact Us</router-link>
           </div>
@@ -102,7 +102,8 @@
               />
             </svg>
 
-            <svg
+         <router-link  to="/cart">   
+          <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
               height="18"
@@ -114,7 +115,9 @@
                 d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z"
               />
             </svg>
+            </router-link>
 
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -149,6 +152,7 @@ body {
   margin: 0 !important;
   font-family: "Poppins", sans-serif;
 }
+
 .navbar_details {
   background-color: black;
 }
