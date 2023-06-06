@@ -38,11 +38,11 @@
                 class="bg-black d-flex align-center justify-space-between"
                 style="padding: 10px 20px; margin-top: 15px"
               >
-                <h5>Read More</h5>
+                <h5 class="text-subtitle-1 font-weight-bold">Read More</h5>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
+                  width="19"
+                  height="19"
                   fill="currentColor"
                   class="bi bi-arrow-right-circle-fill"
                   viewBox="0 0 16 16"
