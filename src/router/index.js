@@ -32,6 +32,11 @@ const routes = [
     name: 'conatctus',
     component: () => import('../views/ContactUsView.vue')
   },
+  {
+    path: '/blogdata',
+    name: 'blogdata',
+    component: () => import('../views/BlogDataView.vue')
+  },
 ]
 
 const router = createRouter({
