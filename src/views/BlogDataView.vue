@@ -31,7 +31,7 @@
           </p>
           <br />
           <div
-            style="background-color: #f3f2ee; padding: 30px; border-radius: 5px"
+            style="background-color: #f3f2ee; padding: 30px; border-radius: 10px"
           >
             <p>
               “When designing an advertisement for a particular product many
