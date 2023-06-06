@@ -72,7 +72,7 @@
             <router-link class="nav_link" to="/">Home</router-link>
             <router-link class="nav_link" to="/shop">Shop</router-link>
             <router-link class="nav_link" to="/blog">Blogs</router-link>
-            <router-link class="nav_link" to="/about">Testemonial</router-link>
+            <router-link class="nav_link" to="/about">About</router-link>
             <router-link class="nav_link" to="/about">Contact Us</router-link>
           </div>
           <div class="navlink_icons">
