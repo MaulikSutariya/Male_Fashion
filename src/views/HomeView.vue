@@ -187,6 +187,7 @@
     <br /><br /><br /><br />
 
     <div class="bg-grey-lighten-3 m-15">
+      
       <div class="v-container pt-15" style="height: 400px">
         <div class="d-flex align-center justify-space-around">
           <img :src="require('@/assets/product-sale.png')" />
