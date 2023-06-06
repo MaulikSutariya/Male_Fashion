@@ -176,7 +176,7 @@
             <div class="shop_Now_button w-100 
             
             +">
-              <h4>Add To Cart</h4>
+             <router-link  style="text-decoration: none;list-style-type:none" to="/cart"> <h4 class="text-black">Add To Cart</h4></router-link>
             </div>
           </div>
             </v-card-item>
@@ -431,8 +431,5 @@ export default {
   cursor: pointer;
   margin-top: 10px;
 }
-.shop_Now_button:hover {
-  border: 2px solid rgba(251, 86, 3, 0.894);
-  color: rgba(251, 86, 3, 0.894);
-}
+
 </style>

@@ -129,7 +129,8 @@
                 >
                 <div class="Now_button">
                   <div class="shop_Now_button w-100 +">
-                    <h4>Add To Cart</h4>
+                    
+                    <router-link  style="text-decoration: none" to="/cart"><h4 class="text-black">Add To Cart</h4></router-link>
                   </div>
                 </div>
               </v-card-item>

@@ -58,7 +58,7 @@
                 <div class="footer__copyright__text">
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                   <p class="text-subtitle-2">
-                    Copyright © 2020 All rights reserved | This template is made
+                    Copyright © 2020 All rights reserved 
                     with by<span class="text-red"> @ Male Fashiom</span>
                   </p>
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

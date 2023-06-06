@@ -38,32 +38,30 @@
             <table class="table table-wishlist">
               <thead>
                 <tr class="align-center">
-                  <th scope="col" colspan="3">Product</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <th scope="col" class="pr-5" >Unit Price</th>
-                  <th scope="col" class="pr-5">Quantity</th>
-                  <th scope="col" class="pr-5">Subtotal</th>
-                  <th scope="col" class="pr-5">Remove</th>
+                  <th scope="col" class="border-b pb-3" colspan="3">Product</th>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <th scope="col" class="pr-5 border-b pb-3">Unit Price</th>
+                  <th scope="col" class="pr-5 border-b pb-3">Quantity</th>
+                  <th scope="col" class="pr-5 border-b pb-3">Subtotal</th>
+                  <th scope="col" class="pr-5 border-b pb-3">Remove</th>
                 </tr>
               </thead>
+              &nbsp;
               <tbody>
                 <tr class="pt-30">
                   <td class="image product-thumbnail pt-40">
                     <img
                       :src="require('@/assets/product-sale.png')"
-                      style="height: 70px;margin-right:15px"
+                      style="height: 70px; margin-right: 15px"
                     />
                   </td>
                   <td class="product-des product-name">
-                    <h6 class=" text-subtitle-1 font-weight-bold ">
+                    <h6 class="text-subtitle-1 font-weight-bold">
                       Multi-Pocket Chest Bag Black
                     </h6>
                   </td>
-                  <td class="product-des product-name">
-                   
-                  </td>
-                    <td class="product-des product-name">
-                   
-                  </td>
+                  <td class="product-des product-name"></td>
+                  <td class="product-des product-name"></td>
                   <td class="price" data-title="Price">
                     <h4 class="text-body text-center">$2.51</h4>
                   </td>
@@ -79,7 +77,7 @@
                   </td>
                   <td class="price text-center" data-title="Price">
                     <svg
-                    style="color:red"
+                      style="color: red"
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
@@ -93,7 +91,8 @@
                     </svg>
                   </td>
                 </tr>
-                <br/>
+
+                <br />
                 <tr>
                   <td class="image product-thumbnail">
                     <img
@@ -102,16 +101,12 @@
                     />
                   </td>
                   <td class="product-des product-name">
-                    <h6 class=" text-subtitle-1 font-weight-bold">
+                    <h6 class="text-subtitle-1 font-weight-bold">
                       Multi-Pocket Chest Bag Black
                     </h6>
                   </td>
-                    <td class="product-des product-name">
-                   
-                  </td>
-                    <td class="product-des product-name">
-                   
-                  </td>
+                  <td class="product-des product-name"></td>
+                  <td class="product-des product-name"></td>
                   <td class="price" data-title="Price">
                     <h4 class="text-body text-center">$3.2</h4>
                   </td>
@@ -127,7 +122,7 @@
                   </td>
                   <td class="price text-center" data-title="Price">
                     <svg
-                    style="color:red"
+                      style="color: red"
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
@@ -141,7 +136,7 @@
                     </svg>
                   </td>
                 </tr>
-                <br/>
+                <br />
                 <tr>
                   <td class="image product-thumbnail">
                     <img
@@ -150,16 +145,12 @@
                     />
                   </td>
                   <td class="product-des product-name">
-                    <h6 class=" text-subtitle-1 font-weight-bold">
+                    <h6 class="text-subtitle-1 font-weight-bold">
                       Multi-Pocket Chest Bag Black
                     </h6>
                   </td>
-                    <td class="product-des product-name">
-                   
-                  </td>
-                    <td class="product-des product-name">
-                   
-                  </td>
+                  <td class="product-des product-name"></td>
+                  <td class="product-des product-name"></td>
                   <td class="price" data-title="Price">
                     <h4 class="text-body text-center">$2.43</h4>
                   </td>
@@ -175,7 +166,7 @@
                   </td>
                   <td class="price text-center" data-title="Price">
                     <svg
-                    style="color:red"
+                      style="color: red"
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
@@ -200,7 +191,11 @@
 
           <div class="d-flex justify-space-between">
             <div class="bg-black pt-3 pr-5 pl-5" style="height: 50px">
-              Continue Shopping
+              <router-link style="text-decoration: none" to="/shop"
+                ><h4 class="text-white text-subtitle-1">
+                  Continue Shopping
+                </h4></router-link
+              >
             </div>
             <div class="bg-black pt-3 pr-5 pl-5" style="height: 50px">
               Update Cart

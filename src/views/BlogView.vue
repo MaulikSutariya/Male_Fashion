@@ -40,6 +40,7 @@
               >
                 <h5 class="text-subtitle-1 font-weight-bold">Read More</h5>
                 <svg
+                  style="cursor: pointer"
                   xmlns="http://www.w3.org/2000/svg"
                   width="19"
                   height="19"
