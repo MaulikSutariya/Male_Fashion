@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- banner -->
-    <div
+    <div class="blogbanner"
       :style="{
         backgroundImage: 'url(' + require('@/assets/breadcrumb-bg.jpg'),
       }"
@@ -20,9 +20,9 @@
     <br />
     <br />
     <!-- blog -->
-    <div class="v-container">
-      <v-row class="flex-wrap justify-space-around">
-        <div class="bg-white d-flex flex-wrap">
+    <div class="v-container ">
+      <v-row class="flex-wrap justify-space-around align-center">
+        <div class="bg-white d-flex flex-wrap justify-center">
           <div v-for="item in items" :key="item.index" class="mb-15 mr-10">
             <div class="">
               <!-- <img :src="require('@/assets/blog/blog-1.jpg')" /> -->
@@ -118,10 +118,29 @@ export default {
           title: "Lasik Eye Surgery Are You Ready",
           img: require("@/assets/blog/blog-9.jpg"),
         },
+        {
+          date: "16 February 2020",
+          title: "Hoop Earrings A Style From History",
+          img: require("@/assets/blog/blog-7.jpg"),
+        },
+        {
+          date: "21 February 2020",
+          title: "Lasik Eye Surgery Are You Ready",
+          img: require("@/assets/blog/blog-8.jpg"),
+        },
+        {
+          date: "28 February 2020",
+          title: "Lasik Eye Surgery Are You Ready",
+          img: require("@/assets/blog/blog-9.jpg"),
+        },
       ],
     };
   },
 };
 </script>
 
-<style></style>
+<style>
+.blogbanner{
+  background-size: cover;
+}
+  </style>

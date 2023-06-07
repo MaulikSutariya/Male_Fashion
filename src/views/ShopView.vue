@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- banner -->
-    <div
+    <div class="about"
       :style="{ backgroundImage: 'url(' + require('@/assets/banner_bg2.jpg') }"
     >
       <div class="v-container">
@@ -128,9 +128,9 @@
                   >₹ {{ item.price }}</v-card-title
                 >
                 <div class="Now_button">
-                  <div class="shop_Now_button w-100 +">
+                  <div class="shop_Now_button w-100 bg-black">
                     
-                    <router-link  style="text-decoration: none" to="/cart"><h4 class="text-black">Add To Cart</h4></router-link>
+                    <router-link  style="text-decoration: none" to="/cart"><h4 class="text-white bg-black">Add To Cart</h4></router-link>
                   </div>
                 </div>
               </v-card-item>
@@ -216,6 +216,9 @@ export default {
 </script>
 
 <style>
+.about{
+  background-size: cover;
+}
 .banner_section {
   padding-top: 110px;
 }

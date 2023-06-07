@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- banner -->
-    <div
+    <div class="aboutbanner"
       :style="{
         backgroundImage: 'url(' + require('@/assets/breadcrumb-bg.jpg'),
       }"
@@ -104,3 +104,9 @@
 <br/><br/><br/><br/>
   </div>
 </template>
+
+<style scoped>
+.aboutbanner{
+  background-size: cover;
+}
+</style>

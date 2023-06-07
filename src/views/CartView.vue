@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- banner -->
-    <div
+    <div class="cartbanner"
       :style="{ backgroundImage: 'url(' + require('@/assets/banner_bg.jpg') }"
     >
       <div class="v-container">
@@ -32,7 +32,7 @@
     <br />
 
     <div class="v-container">
-      <div class="d-flex justify-space-between">
+      <div class="d-flex justify-space-between my-auto">
         <div class="">
           <div class="table-responsive shopping-summery">
             <table class="table table-wishlist">
@@ -259,4 +259,8 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.cartbanner{
+  background-size: cover;
+}
+</style>

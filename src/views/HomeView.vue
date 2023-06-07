@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="home"  :style="{backgroundImage: 'url('+require('@/assets/banner_bg.jpg')}">
+    <div
+      class="home"
+      :style="{ backgroundImage: 'url(' + require('@/assets/banner_bg.jpg') }"
+    >
       <div class="v-container">
         <div class="banner_section">
           <h6>SUMMER COLLECTION</h6>
@@ -172,13 +175,16 @@
               <v-card-title class="font-weight-bold text-subtitle-1"
                 >₹ {{ item.price }}</v-card-title
               >
-             <div class="Now_button">
-            <div class="shop_Now_button w-100 
-            
-            +">
-             <router-link  style="text-decoration: none;list-style-type:none" to="/cart"> <h4 class="text-black">Add To Cart</h4></router-link>
-            </div>
-          </div>
+              <div class="Now_button">
+                <div class="shop_Now_button w-100 +">
+                  <router-link
+                    style="text-decoration: none; list-style-type: none"
+                    to="/cart"
+                  >
+                    <h4 class="text-black">Add To Cart</h4></router-link
+                  >
+                </div>
+              </div>
             </v-card-item>
           </v-card>
         </div>
@@ -187,7 +193,6 @@
     <br /><br /><br /><br />
 
     <div class="bg-grey-lighten-3 m-15">
-      
       <div class="v-container pt-15" style="height: 400px">
         <div class="d-flex align-center justify-space-around">
           <img :src="require('@/assets/product-sale.png')" />
@@ -248,7 +253,6 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {
@@ -337,6 +341,7 @@ export default {
 .home {
   /* background-image: url("@/assets/banner_bg.jpg"); */
   height: 600px;
+  background-size: cover;
 }
 .banner_section {
   padding-top: 110px;
@@ -385,7 +390,7 @@ export default {
 .banner_1 {
   text-align: end;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
@@ -408,14 +413,14 @@ export default {
 .banner_2 {
   text-align: start;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
 .banner_3 {
   text-align: end;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
@@ -432,5 +437,4 @@ export default {
   cursor: pointer;
   margin-top: 10px;
 }
-
 </style>

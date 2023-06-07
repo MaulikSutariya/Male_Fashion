@@ -152,6 +152,8 @@ export default {};
 body {
   margin: 0 !important;
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  max-width:100%
 }
 
 .navbar_details {

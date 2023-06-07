@@ -9,8 +9,8 @@
     </div>
     <br /><br />
     <div class="v-container">
-      <div>
-        <img :src="require('@/assets/blog/blog-details.jpg')" />
+      <div class="text-center">
+        <img :src="require('@/assets/blog/blog-details.jpg')" /><br/><br/>
         <div style="padding: 20px 120px; text-align: justify">
           <p class="text-subtitle-1">
             Hydroderm is the highly desired anti-aging cream on the block. This
