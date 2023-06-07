@@ -13,8 +13,9 @@
           <br />
           <br />
           <div
+            @click="MyAccount = !MyAccount"
             class="d-flex align-center bg-grey-lighten-2 mb-5"
-            style="padding: 7px 15px; border-radius: 5px"
+            style="padding: 7px 15px; border-radius: 5px; cursor: pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +33,9 @@
             <h5>My Account</h5>
           </div>
           <div
+            @click="Password = !Password"
             class="d-flex align-center bg-grey-lighten-2 mb-5"
-            style="padding: 7px 15px; border-radius: 5px"
+            style="padding: 7px 15px; border-radius: 5px; cursor: pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +57,7 @@
           </div>
           <div
             class="d-flex align-center bg-grey-lighten-2 mb-5"
-            style="padding: 7px 15px; border-radius: 5px"
+            style="padding: 7px 15px; border-radius: 5px; cursor: pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +78,7 @@
           </div>
           <div
             class="d-flex align-center bg-grey-lighten-2 mb-5"
-            style="padding: 7px 15px; border-radius: 5px"
+            style="padding: 7px 15px; border-radius: 5px; cursor: pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +96,7 @@
           </div>
           <div
             class="d-flex align-center bg-grey-lighten-2 mb-5"
-            style="padding: 7px 15px; border-radius: 5px"
+            style="padding: 7px 15px; border-radius: 5px; cursor: pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +114,7 @@
           </div>
           <div
             class="d-flex align-center bg-grey-lighten-2 mb-5"
-            style="padding: 7px 15px; border-radius: 5px"
+            style="padding: 7px 15px; border-radius: 5px; cursor: pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -136,8 +138,9 @@
         </div>
         <!-- profile -->
 
-        <!-- other -->
+        <!-- my profile -->
         <div
+          v-show="MyAccount"
           style="
             width: 100%;
             margin-left: 100px;
@@ -203,7 +206,198 @@
             </div>
           </div>
         </div>
-        <!-- other -->
+        <!-- my profile -->
+
+        <!-- change password -->
+        <!-- <div  v-show='Password'
+          style="
+            width: 100%;
+            height:70%;
+            margin-left: 100px;
+            padding: 20px;
+            border-radius: 10px;
+          "
+          class="bg-grey-lighten-2"
+        >
+          <h5
+            class="text-h5 font-weight-bold bg-white pl-5 mb-5"
+            style="padding: 5px; border-radius: 8px"
+          >
+            Change Password
+          </h5>
+          <div
+            class="bg-white"
+            style="padding: 5px; border-radius: 8px; height: 42%"
+          >
+          
+            <v-row
+              style="padding-top: 10px; padding-left: 20px; padding-right: 20px"
+            >
+              <v-text-field label="First Name"></v-text-field>&nbsp;&nbsp;&nbsp;
+             
+              <v-text-field label="Last Name"></v-text-field>
+            </v-row>
+      
+
+            <div class="d-flex justify-end mt-5 mb-5">
+              <h5
+                class="bg-grey-lighten-2 mr-10"
+                style="padding: 10px 30px; border-radius: 5px"
+              >
+                Cancle
+              </h5>
+              <h5
+                class="bg-grey-lighten-2 mr-5"
+                style="padding: 10px 30px; border-radius: 5px"
+              >
+                Submit
+              </h5>
+            </div>
+          </div>
+        </div> -->
+        <!-- change password -->
+
+        <!-- billing address -->
+        <!-- <div  v-show='MyAccount'
+          style="
+            width: 100%;
+            margin-left: 100px;
+            padding: 20px;
+            border-radius: 10px;
+          "
+          class="bg-grey-lighten-2"
+        >
+          <h5
+            class="text-h5 font-weight-bold bg-white pl-5 mb-5"
+            style="padding: 5px; border-radius: 8px"
+          >
+            Billing Address
+          </h5>
+          <div
+            class="bg-white"
+            style="padding: 5px; border-radius: 8px; height: 89%"
+          >
+           
+          
+            <h6 class="text-subtitle-1 mt-3 mb-5 ml-2 font-weight-bold">
+              1. Address Details
+            </h6>
+            <v-row style="padding-top5px;padding-left:20px;padding-right:20px">
+              <v-text-field label="House / Office No"></v-text-field
+              >&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Apartment Name "></v-text-field
+              >&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Street / Area"></v-text-field>
+            </v-row>
+            <v-row style="padding-top5px;padding-left:20px;padding-right:20px">
+              <v-text-field label="City"></v-text-field>&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Country"></v-text-field>&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Pin Code"></v-text-field>
+            </v-row>
+            <h6 class="text-subtitle-1 mt-3 mb-5 ml-2 font-weight-bold">
+              2. Default Address Details
+            </h6>
+            <v-row style="padding-top5px;padding-left:20px;padding-right:20px">
+              <v-text-field label="House / Office No"></v-text-field
+              >&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Apartment Name "></v-text-field
+              >&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Street / Area"></v-text-field>
+            </v-row>
+            <v-row style="padding-top5px;padding-left:20px;padding-right:20px">
+              <v-text-field label="City"></v-text-field>&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Country"></v-text-field>&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Pin Code"></v-text-field>
+            </v-row>
+
+            <div class="d-flex justify-end mt-12">
+              <h5
+                class="bg-grey-lighten-2 mr-10"
+                style="padding: 10px 30px; border-radius: 5px"
+              >
+                Cancle
+              </h5>
+              <h5
+                class="bg-grey-lighten-2 mr-5"
+                style="padding: 10px 30px; border-radius: 5px"
+              >
+                Submit
+              </h5>
+            </div>
+          </div>
+        </div> -->
+        <!-- billing address -->
+
+        <!-- Shipping address -->
+        <!-- <div  v-show='MyAccount'
+          style="
+            width: 100%;
+            margin-left: 100px;
+            padding: 20px;
+            border-radius: 10px;
+          "
+          class="bg-grey-lighten-2"
+        >
+          <h5
+            class="text-h5 font-weight-bold bg-white pl-5 mb-5"
+            style="padding: 5px; border-radius: 8px"
+          >
+            Billing Address
+          </h5>
+          <div
+            class="bg-white"
+            style="padding: 5px; border-radius: 8px; height: 89%"
+          >
+           
+          
+            <h6 class="text-subtitle-1 mt-3 mb-5 ml-2 font-weight-bold">
+              1. Address Details
+            </h6>
+            <v-row style="padding-top5px;padding-left:20px;padding-right:20px">
+              <v-text-field label="House / Office No"></v-text-field
+              >&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Apartment Name "></v-text-field
+              >&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Street / Area"></v-text-field>
+            </v-row>
+            <v-row style="padding-top5px;padding-left:20px;padding-right:20px">
+              <v-text-field label="City"></v-text-field>&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Country"></v-text-field>&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Pin Code"></v-text-field>
+            </v-row>
+            <h6 class="text-subtitle-1 mt-3 mb-5 ml-2 font-weight-bold">
+              2. Default Address Details
+            </h6>
+            <v-row style="padding-top5px;padding-left:20px;padding-right:20px">
+              <v-text-field label="House / Office No"></v-text-field
+              >&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Apartment Name "></v-text-field
+              >&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Street / Area"></v-text-field>
+            </v-row>
+            <v-row style="padding-top5px;padding-left:20px;padding-right:20px">
+              <v-text-field label="City"></v-text-field>&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Country"></v-text-field>&nbsp;&nbsp;&nbsp;
+              <v-text-field label="Pin Code"></v-text-field>
+            </v-row>
+
+            <div class="d-flex justify-end mt-12">
+              <h5
+                class="bg-grey-lighten-2 mr-10"
+                style="padding: 10px 30px; border-radius: 5px"
+              >
+                Cancle
+              </h5>
+              <h5
+                class="bg-grey-lighten-2 mr-5"
+                style="padding: 10px 30px; border-radius: 5px"
+              >
+                Submit
+              </h5>
+            </div>
+          </div>
+        </div> -->
+        <!-- Shipping address -->
       </div>
     </div>
     <br />
@@ -213,7 +407,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      MyAccount: true,
+      Password: true,
+    };
+  },
+};
 </script>
 
 <style></style>
