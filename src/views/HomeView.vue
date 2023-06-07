@@ -89,9 +89,7 @@
                 indeterminate
               ></v-progress-linear>
             </template>
-
             <img :src="item.img" />
-
             <div class="px-2">
               <v-chip-group v-model="selection">
                 <v-chip v-slot="{ isSelected, toggle }"
@@ -176,12 +174,12 @@
                 >₹ {{ item.price }}</v-card-title
               >
               <div class="Now_button">
-                <div class="shop_Now_button w-100 +">
+                <div class="shop_Now_button w-100 bg-black">
                   <router-link
                     style="text-decoration: none; list-style-type: none"
                     to="/cart"
                   >
-                    <h4 class="text-black">Add To Cart</h4></router-link
+                    <h4 class="text-white">Add To Cart</h4></router-link
                   >
                 </div>
               </div>
