@@ -206,6 +206,8 @@
             </div>
           </div>
         </div>
+
+        
         <!-- my profile -->
 
         <!-- change password -->
@@ -398,7 +400,11 @@
           </div>
         </div> -->
         <!-- Shipping address -->
+
+
       </div>
+
+
     </div>
     <br />
     <br />
@@ -417,4 +423,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>
